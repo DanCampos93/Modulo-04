@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+    <!--Proteção em relação a ataques pelo iframe-->
+</head>
+<body>
+    <h1>Meu site principal</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat maxime excepturi tempore sit dolorum facere corporis maiores, ad ullam natus quibusdam sunt officiis, itaque qui fuga expedita eaque ex doloribus!</p>
+
+    <!--Bloqueia todo acesso que o site dentro iframe possa tentar fazer (sandbox="sandbox")
+    Sandbox por reduzir o nível de segurança permitindo que algumas questões possam, com a exemplo de allow-same-origin (coisas da mesma origem), allow-forms (uso de formularios),  allow-scripts(permitindo scrptis)
+    -->
+    
+    <!--
+    O conteudo carregado dentro do iframe não vai pegar nenhum tipo de informação do usuario (referrerpolicy ="no-referrer")-->
+    <iframe src="Paginas Extras/pagina004.html" sandbox="sandbox" referrerpolicy="no-referrer">Seu nevagador não é compatível com isso...</iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas id voluptatibus tenetur magnam, porro fuga, quo eius, mollitia nihil est perspiciatis. Minus, aperiam. Nobis, officia? Pariatur consectetur commodi iusto ipsam.</p>
+</body>
+</html>
