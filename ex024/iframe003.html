@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95%;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sint tenetur reiciendis ea aliquid a quasi fuga deserunt facilis, atque beatae quaerat. Et cum sequi molestias maiores perspiciatis, fuga dignissimos. lo</p>
+
+    <ul><!--colocando o name no iframe e dando referencia a este no link em target, carregará a pagina iframe abaixo-->
+        <li><a href="Paginas Extras/pagina001.html" target="frame">Primeira página</a></li>
+        <li><a href="Paginas Extras/pagina002.html" target="frame">Segunda página</a></li>
+        <li><a href="Paginas Extras/pagina003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque qui corporis eum! Est laborum quisquam ipsa error pariatur saepe. Rem pariatur architecto autem nisi voluptates accusantium doloremque aliquid odit incidunt?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur corporis, atque explicabo nisi dolores nemo exercitationem accusamus cupiditate deleniti nostrum voluptates voluptatum eos labore praesentium, voluptatem laudantium harum quasi veniam!</p>
+
+    <!--colocando o link no src faz que alguma pagina carregue instantaneamente para não deixar o iframe em braco
+    <iframe id="tela" name="frame" src="Paginas Extras/pagina001.html">
+    -->
+
+    <!--Já o srcdoc permite colocar um documento HTML-->
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1> <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur laborum dolorem tempora enim beatae molestias. Vitae voluptas, nam modi dicta repellendus ullam eligendi aspernatur minima, iste, itaque officiis. Sapiente, labore?. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p><img src='imagens/course-716206_640.jpg'>">
+        <!--atenção nas aspas, se esta dentro das duplas, deve-se usar a simples-->
+        <p>Infelizmente seu navegador não é compatível com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur laborum dolorem tempora enim beatae molestias. Vitae voluptas, nam modi dicta repellendus ullam eligendi aspernatur minima, iste, itaque officiis. Sapiente, labore?. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis quis non, expedita numquam inventore ab earum dolores dicta, vero distinctio asperiores! Eos necessitatibus explicabo tempore ipsam impedit autem quis animi?</p>
+    
+</body>
+</html>
